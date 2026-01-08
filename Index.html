@@ -1,82 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Curriculum</title>
+    <meta charset="UTF-8">
+    <title>Curriculum - Jose Luis Astudillo Duran</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente e iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Encabezado principal -->
-    <h1>Mi Curriculum</h1>
-    
-    <!-- Menú de navegación simple -->
-    <div>
-        <a href="#sobre-mi">Sobre mi</a> | 
-        <a href="#Formacion-Academica">Formacion Academica</a> |
-        <a href="#Experiencia-laboral">Experiencia Laboral</a> |
-        <a href="#contacto">Contacto</a> |
-        <a href="#Habilidades">Habilidades</a>
-        
-    </div>
-    
-    <hr>
-    
-    <!-- Sección Sobre mí -->
-    <h2 id="sobre-mi">Sobre mi</h2>
-    <p><strong>Nombre:</strong> Jose Luis Astudillo Duran</p>
-    <p><strong>Cedula de Identidad:</strong> V31.157.600</p>
-    <p><strong>Fecha de nacimiento:</strong> 04/03/2004</p>
-   
-    <hr>
-    
-    <!-- Sección Formacion Academica -->
-    <h2 id="Formacion-Academica">Formacion Academica
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <img src="images/image.jpeg" alt="Foto de Jose Luis Astudillo" class="foto-perfil">
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
+                <li><a href="#formacion"><i class="fa-solid fa-graduation-cap"></i> Formación</a></li>
+                <li><a href="#experiencia"><i class="fa-solid fa-briefcase"></i> Experiencia</a></li>
+                <li><a href="#habilidades"><i class="fa-solid fa-lightbulb"></i> Habilidades</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="botones-header">
+            <button onclick="window.print()" class="btn-print"><i class="fa-solid fa-print"></i> Imprimir</button>
+        </div>
+    </header>
 
-    <h3>Bachiller en Ciencias.</h3>
-    <p>Complejo Educativo "La Inmaculada".</p>
-   
-    
-    <h3>Estudiante de la "Universidad Nacional Experimental Simon Rodriguez".</h3>
-    <p>Cuarto Semestre de "Administracion mencion Informatica".</p>
+    <main>
+        <!-- Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p><strong>Nombre:</strong> Jose Luis Astudillo Duran</p>
+            <p><strong>Cédula de Identidad:</strong> V31.157.600</p>
+            <p><strong>Fecha de nacimiento:</strong> 04/03/2004</p>
+        </section>
 
-    <h3>Estudiante de la "Universidad Politecnica Territorial del Oeste de Sucre Clodosbaldo Russian".</h3>
-    <p>Primer trayecto de "Ingenieria Informatica".</p>
+        <!-- Formación Académica -->
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            <article>
+                <h3>Bachiller en Ciencias</h3>
+                <p>Complejo Educativo "La Inmaculada".</p>
+            </article>
+            <article>
+                <h3>Universidad Nacional Experimental Simón Rodríguez</h3>
+                <p>Cuarto semestre de Administración, mención Informática.</p>
+            </article>
+            <article>
+                <h3>Universidad Politécnica Territorial del Oeste de Sucre Clodosbaldo Russian</h3>
+                <p>Primer trayecto de Ingeniería Informática.</p>
+            </article>
+        </section>
 
-    
-    <hr>
-    
-    <!-- Sección Experiencia Laboral -->
-    <h2 id="Experiencia-laboral">Experiencia Laboral
-    
-    <h3>Hospital Universitario Antonio Patricio Alcala (Area de Recursos Humanos).</h3>
-    <p>Operador Administrativo.</p>
-    <p>del 2021 al 2024.</p>
-    
-    <h3>Complejo Educativo "La Inmaculada".</h3>
-    <p>Asistente Administrativo.</p>
-    <p>2021 Hasta la Actualidad.</p>
-    
-    
-    <hr>
-    
-    <!-- Sección Habilidades -->
-     <h2 id="Habilidades">Habilidades</h2>
-     
-     <h3>
-    <ul>
-        <li>Conocimiento basico en Ofimatica</li>
-        <li>Facilidad para adaptarme a cualquier tipo de trabajo</li>
-        <li>Responsable y dedicado</li>
-        <li>buena capacidad para resolver problemas</li>
-    </ul>
-    </h3>
-    <hr>
-    
-    <!-- Sección Contacto -->
-    <h2 id="contacto">Contacto</h2>
-    <p><strong>Email:</strong> joseluisastudillo65@gmail.com</p>
-    <p><strong>Telefono:</strong> 0424-8068826</p>
-    
-    <!-- Pie de página -->
-    <hr>
-    <p>© 2025 Mi Curriculum</p>
+        <!-- Experiencia Laboral -->
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <article>
+                <h3>Hospital Universitario Antonio Patricio Alcalá</h3>
+                <p><em>Operador Administrativo</em> (2021 - 2024)</p>
+            </article>
+            <article>
+                <h3>Complejo Educativo "La Inmaculada"</h3>
+                <p><em>Asistente Administrativo</em> (2021 - Actualidad)</p>
+            </article>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Conocimiento básico en Ofimática</li>
+                <li>Facilidad para adaptarme a cualquier tipo de trabajo</li>
+                <li>Responsable y dedicado</li>
+                <li>Buena capacidad para resolver problemas</li>
+            </ul>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> joseluisastudillo65@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> <strong>Teléfono:</strong> 0424-8068826</p>
+            <p class="no-print"><i class="fa-brands fa-whatsapp"></i> 
+               <strong>WhatsApp:</strong> 
+               <a href="https://wa.me/584248068826" target="_blank">Enviar mensaje</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Jose Luis Astudillo Duran</p>
+    </footer>
 </body>
 </html>
